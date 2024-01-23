@@ -1,0 +1,31 @@
+<app-log-in-out></app-log-in-out>
+<div class="form">
+  <form
+    [formGroup]="loginForm"
+    class="flex flex-column align-items-center gap-3"
+  >
+    <div class="flex flex-column gap-2">
+      <label for="username">Username</label>
+
+      <input
+        pInputText
+        id="username"
+        aria-describedby="username-help"
+        formControlName="Username"
+      />
+      <small id="username-help">Enter your username to Login.</small>
+    </div>
+    <div class="flex flex-column gap-2">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        pInputText
+        id="username"
+        aria-describedby="password-help"
+        formControlName="Password"
+      />
+      <small id="password-help">Enter your password to Login.</small>
+    </div>
+    <p-button label="Submit"></p-button>
+  </form>
+</div>
